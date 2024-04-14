@@ -70,7 +70,7 @@ function comenzarPartida(){
                         document.getElementById("actual").innerHTML = 0;
                         document.getElementById("total").innerHTML = 0;
                         // Restauramos la imagen por defecto de la máquina.                    
-                        imagenOriginal.src = "/img/defecto.png";
+                        imagenOriginal.src = "img/defecto.png";
                         // Habilitamos el botón previamente deshabilitado para poder comenzar una nueva partida.
                         botonJugar.disabled = false; 
                         
@@ -158,14 +158,14 @@ function verificarPartidas(){
 // Funcion para cambiar las imagenes del lado Jugador.
 function cambiarImagenesJugador(){
     posibilidades[0] = document.getElementsByTagName("img")[0];
-    posibilidades[0].src = "/img/piedraJugador.png";
+    posibilidades[0].src = "img/piedraJugador.png";
     posibilidades[0].classList.replace("seleccionado","noSeleccionado");//cambiamos la clase para partir sin ninguna selección.
     posibilidades[0].classList.add("piedra");
     posibilidades[1] = document.getElementsByTagName("img")[1];
-    posibilidades[1].src = "/img/papelJugador.png";
+    posibilidades[1].src = "img/papelJugador.png";
     posibilidades[1].classList.add("papel");
     posibilidades[2] = document.getElementsByTagName("img")[2];
-    posibilidades[2].src = "/img/tijeraJugador.png";
+    posibilidades[2].src = "img/tijeraJugador.png";
     posibilidades[2].classList.add("tijera");
 }
 
@@ -257,21 +257,21 @@ function seleccionMaquina(numero){
     let exit = false;
         while(!exit){
         if(selector == 0){
-            eleccionMaquina.src = "/img/piedraOrdenador.png";
+            eleccionMaquina.src = "img/piedraOrdenador.png";
             eleccionMaquina.classList.add("piedra");
             console.log("Maquina - piedra"); //test
             exit = true;
             return 0;
 
         }else if (selector == 1){
-            eleccionMaquina.src = "/img/papelOrdenador.png"; 
+            eleccionMaquina.src = "img/papelOrdenador.png"; 
             eleccionMaquina.classList.add("papel");
             console.log("Maquina - papel"); //test
             exit = true;                              
             return 1;
             
         } else if (selector == 2){
-            eleccionMaquina.src = "/img/tijeraOrdenador.png";
+            eleccionMaquina.src = "img/tijeraOrdenador.png";
             eleccionMaquina.classList.add("tijera");
             console.log("Maquina - tijera"); //test 
             exit = true;           
